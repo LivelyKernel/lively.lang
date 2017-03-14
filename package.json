@@ -55,8 +55,8 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "doc-comments": "*",
-    "lively.ast": "*",
+    "doc-comments": "0.1.5",
+    "lively.ast": "0.9.8",
     "uglify-js": "^2.6.1",
     "expect.js": "*",
     "mocha": "*"

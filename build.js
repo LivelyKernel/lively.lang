@@ -7,8 +7,10 @@ fswatch -0 -r . | xargs -0 -I{} bash -c \
 var uglify      = require("uglify-js")
 var fs          = require("fs");
 var exec        = require("child_process").exec;
-var fun         = require("./index").fun;
-var arr         = require("./index").arr;
+var lang        = require("./index");
+var fun         = lang.fun;
+var arr         = lang.arr;
+global.lively = {lang: lang};
 var ast         = require("lively.ast");
 var target      = "./dist/lively.lang.dev.js";
 var targetMin   = target.replace(/\.dev\.js$/,".min.js");
